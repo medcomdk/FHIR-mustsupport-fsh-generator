@@ -17,7 +17,7 @@
                                     * test[=].action[+].assert.description = "Mustsupport test for <xsl:value-of select="f:path/@value"/>"<br/>
                                     * test[=].action[=].assert.direction = #request<br/>
                                     * test[=].action[=].assert.expression = 
-                                    "Bundle.entry.resource.ofType(<xsl:value-of select="substring-before(f:path/@value,'.')"/>).<xsl:value-of select="translate(substring-after(f:path/@value,'.'),'[x]','')"/>.exists()<br/>
+                                    "Bundle.entry.resource.ofType(<xsl:value-of select="substring-before(f:path/@value,'.')"/>).<xsl:value-of select="translate(substring-after(f:path/@value,'.'),'[x]','')"/>.exists()"<br/>
                                     * test[=].action[=].assert.warningOnly = true<br/>                                   
                                     <br/>
                                 </td>  
